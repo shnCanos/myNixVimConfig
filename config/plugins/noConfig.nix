@@ -29,5 +29,6 @@
     noice.enable = true;
     lualine.enable = true; # Maybe add configuration later?
     neogit.enable = true; # git stuff
+    luasnip.enable = true;
   };
 }

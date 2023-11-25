@@ -117,6 +117,10 @@
       action = "commands";
       desc = "Commands";
     };
+    "<leader>pp" = {
+      action = "projects";
+      desc = "Search Projects";
+    };
     # << OTHER
   };
 }
