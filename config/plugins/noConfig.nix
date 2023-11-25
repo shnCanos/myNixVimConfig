@@ -26,9 +26,9 @@
     project-nvim.enable = true;
     trouble.enable = true;
     undotree.enable = true;
-    noice.enable = true;
     lualine.enable = true; # Maybe add configuration later?
     neogit.enable = true; # git stuff
     luasnip.enable = true;
+    notify.enable = true;
   };
 }

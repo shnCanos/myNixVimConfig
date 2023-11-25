@@ -1,5 +1,5 @@
-{ pkgs, ... }: { 
-  imports = [ ./plugins ./mappings ]; 
+{ pkgs, ... }: {
+  imports = [ ./plugins ./mappings ];
 
   config = {
     colorschemes.catppuccin = {

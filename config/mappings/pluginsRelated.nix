@@ -1,6 +1,7 @@
 { ... }:
 # plugins.toggleterm.enable
-[ # TOGGLETERM
+[
+  # TOGGLETERM
 
   {
     mode = "n";
@@ -45,7 +46,8 @@
     action = "<cmd>AddProject<CR>";
     options.desc = "Add Project";
   }
-] ++ [ # plugins.undotree.enable
+] ++ [
+  # plugins.undotree.enable
   # Open UndoTree
   {
     mode = "n";
@@ -58,7 +60,15 @@
 # neotree
 [{
   mode = "n";
-  key = "<leader>oe";
-  action = "<cmd>Neotree<CR>";
+  key = "<leader>e";
+  action = "<cmd>Neotree toggle reveal_force_cwd<CR>";
   options.desc = "Open/Focus neotree";
+}] ++
+
+  # Telescope (For some reason this gives me an error if I put it in telescope itself)
+[{
+  mode = "n";
+  key = "<leader>pp";
+  action = "<cmd>Telescope projects<CR>";
+  options.desc = "Find Projects";
 }]
