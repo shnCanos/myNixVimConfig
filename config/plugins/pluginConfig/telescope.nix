@@ -27,10 +27,6 @@
       action = "colorscheme";
       desc = "Find Theme";
     };
-    "<leader>fw" = {
-      action = "grep_string";
-      desc = "Find Word";
-    };
     "<leader>fb" = {
       action = "buffers";
       desc = "Find buffers";
@@ -106,6 +102,14 @@
     "<leader>sR" = {
       action = "resume";
       desc = "Resume";
+    };
+    "<leader>sW" = {
+      action = "grep_string";
+      desc = "Find Word";
+    };
+    "<leader>sw" = {
+      action = "live_grep";
+      desc = "Live Grep";
     };
     # << SEARCH
     # OTHER
