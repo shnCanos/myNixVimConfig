@@ -1,5 +1,5 @@
 { ... }:
 
 {
-  imports = [ ./cmp.nix ./noConfig.nix ./pluginConfig ];
+  imports = [ ./noConfig.nix ./pluginConfig ];
 }

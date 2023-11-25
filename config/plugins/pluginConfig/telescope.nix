@@ -4,11 +4,7 @@
   enable = true;
   extensions = {
     file_browser.enable = true;
-    fzf-native = {
-      enable = true;
-      fuzzy = true;
-      overrideFileSorter = true;
-    };
+    fzf-native.enable = true;
     media_files.enable = true;
     project-nvim.enable = true;
     frecency.enable = true;
@@ -19,13 +15,9 @@
       action = "command_history";
       desc = "Find command history";
     };
-    "<leader>ff" = {
-      action = "find_files";
-      desc = "Find Files";
-    };
     "<leader> " = {
-      action = "buffers";
-      desc = "Find buffers";
+      action = "find_files";
+      desc = "Find File";
     };
     "<leader>," = {
       action = "buffers";

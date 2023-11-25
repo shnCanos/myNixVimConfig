@@ -1,12 +1,14 @@
 { ... }:
-# plugins.toggleterm.enable
-[
+let
+  cmd = command: "<cmd>${command}<cr>";
+  # plugins.toggleterm.enable
+in [
   # TOGGLETERM
 
   {
     mode = "n";
     key = "<leader>ot";
-    action = "<cmd>ToggleTerm<CR>";
+    action = cmd "ToggleTerm";
     options.desc = "Toggle ToggleTerm";
   }
   {
@@ -33,42 +35,43 @@
 
 ] ++ [{
   key = "<leader>gg";
-  action = "<cmd>Neogit<CR>";
+  action = cmd "Neogit";
   options.desc = "Open Neogit";
 }] ++
 
 # plugins.project-nvim.enable
 [
-  # ADD PROJECT
   {
-    mode = "n";
+    # ADD PROJECT
     key = "<leader>pa";
-    action = "<cmd>AddProject<CR>";
+    action = cmd "AddProject";
     options.desc = "Add Project";
+  }
+  {
+    # (For some reason this gives me an error if I put it in telescope itself)
+    key = "<leader>pf";
+    action = cmd "Telescope projects";
+    options.desc = "Find Projects";
   }
 ] ++ [
   # plugins.undotree.enable
   # Open UndoTree
   {
-    mode = "n";
     key = "<leader>fu";
-    action = "<cmd>UndotreeShow<CR>";
+    action = cmd "UndotreeShow";
     options.desc = "Find Undo";
   }
 ] ++
 
 # neotree
 [{
-  mode = "n";
   key = "<leader>e";
-  action = "<cmd>Neotree toggle reveal_force_cwd<CR>";
+  action = cmd "Neotree toggle";
   options.desc = "Open/Focus neotree";
 }] ++
-
-  # Telescope (For some reason this gives me an error if I put it in telescope itself)
+# HACK Telescope
 [{
-  mode = "n";
-  key = "<leader>pp";
-  action = "<cmd>Telescope projects<CR>";
-  options.desc = "Find Projects";
+  key = "<leader>ff";
+  action = cmd "Telescope file_browser";
+  options.desc = "Browse Files";
 }]

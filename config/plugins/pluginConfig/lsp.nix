@@ -5,7 +5,7 @@
   servers = {
     gdscript.enable = true;
     pyright.enable = true;
-    rnix-lsp.enable = true; # Nix
+    nil-ls.enable = true; # Nix
     jsonls.enable = true;
     ltex = {
       enable = true;

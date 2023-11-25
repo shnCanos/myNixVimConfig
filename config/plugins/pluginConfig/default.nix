@@ -10,5 +10,6 @@
     presence-nvim = import ./presence.nix { };
     telescope = import ./telescope.nix { };
     lsp = import ./lsp.nix { };
+    nvim-cmp = import ./nvim-cmp.nix { };
   };
 }
