@@ -11,5 +11,6 @@
     telescope = import ./telescope.nix { };
     lsp = import ./lsp.nix { };
     nvim-cmp = import ./nvim-cmp.nix { };
+    notify = import ./notify.nix;
   };
 }

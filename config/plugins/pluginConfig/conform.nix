@@ -7,5 +7,6 @@
   formattersByFt = {
     lua = [ "stylua" ];
     python = [ "isort" "black" ];
+    nix = ["nixfmt"];
   };
 }

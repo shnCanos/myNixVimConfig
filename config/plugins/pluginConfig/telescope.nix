@@ -3,7 +3,11 @@
 {
   enable = true;
   extensions = {
-    file_browser.enable = true;
+    file_browser = {
+      enable = true;
+      grouped = true;
+      hideParentDir = true;
+    };
     fzf-native.enable = true;
     media_files.enable = true;
     project-nvim.enable = true;
