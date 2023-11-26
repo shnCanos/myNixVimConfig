@@ -75,6 +75,16 @@ in [
     action = cmd "Neotree toggle reveal_force_cwd";
     options.desc = "Reveal File in Neotree";
   }
+  {
+    key = "<leader>fR";
+    action = "${cmd "Neotree reveal_force_cwd"}r";
+    options.desc = "Rename file";
+  }
+  {
+    key = "<leader>fD";
+    action = "${cmd "Neotree reveal_force_cwd"}d";
+    options.desc = "Delete file";
+  }
 ]
 # HACK Telescope
 # [{

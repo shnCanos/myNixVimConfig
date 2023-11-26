@@ -117,19 +117,31 @@
     };
     # << SEARCH
     # CODE
-    "<leader>cd" = {
+    "<leader>cx" = {
       action = "diagnostics";
       desc = "Find diagnostics";
     };
-    "<leader>cx" = {
+    "<leader>ca" = {
       action = "quickfix";
       desc = "Code actions";
+    };
+    "<leader>cz" = {
+      action = "lsp_references";
+      desc = "Find references";
+    };
+    "<leader>ci" = {
+      action = "lsp_implementations";
+      desc = "Find implementations";
     };
     # << CODE
     # OTHER
     "<M-x>" = {
       action = "commands";
       desc = "Commands";
+    };
+    "<leader>iu" = {
+      action = "symbols";
+      desc = "Insert Symbols";
     };
     # << OTHER
   };
