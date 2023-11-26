@@ -62,6 +62,12 @@ in [
     options.desc = "Find Undo";
   }
 ] ++
+# Oil
+[{
+  key = "<leader>ff";
+  action = cmd "Oil --float";
+  options.desc = "Open oil";
+}] ++
 
 # neotree
 [
@@ -69,11 +75,6 @@ in [
     key = "<leader>e";
     action = cmd "Neotree toggle";
     options.desc = "Open/Focus neotree";
-  }
-  {
-    key = "<leader>ff";
-    action = cmd "Neotree toggle reveal_force_cwd";
-    options.desc = "Reveal File in Neotree";
   }
   {
     key = "<leader>fR";

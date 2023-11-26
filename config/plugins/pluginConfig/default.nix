@@ -13,5 +13,6 @@
     lsp = import ./lsp.nix { };
     nvim-cmp = import ./nvim-cmp.nix { };
     notify = import ./notify.nix { };
+    oil = import ./oil.nix { };
   };
 }
