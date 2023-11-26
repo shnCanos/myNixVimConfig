@@ -1,4 +1,7 @@
 { ... }: {
   enable = true;
-  keymaps = { "q" = "actions.close"; };
+  keymaps = {
+    "q" = "actions.close";
+    "<tab>" = "actions.select";
+  };
 }
