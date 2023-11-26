@@ -1,6 +1,7 @@
 { ... }:
 
-[
+let cmd = command: "<cmd>${command}<cr>";
+in [
   # DELETE WORD
   {
     mode = [ "i" "t" "n" ];
@@ -15,5 +16,13 @@
   {
     key = "k";
     action = "gk";
+  }
+  {
+    key = "<leader>qq";
+    action = cmd "qa";
+  }
+  {
+    key = "<leader>qw";
+    action = cmd "wqa";
   }
 ]
