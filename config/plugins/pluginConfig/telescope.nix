@@ -3,12 +3,12 @@
 {
   enable = true;
   extensions = {
-    file_browser = {
+    file_browser = { # FAILED
       enable = true;
       grouped = true;
       hideParentDir = true;
     };
-    fzf-native.enable = true;
+    # fzf-native.enable = true; # For some reason this one does not work
     media_files.enable = true;
     project-nvim.enable = true;
     frecency.enable = true;
