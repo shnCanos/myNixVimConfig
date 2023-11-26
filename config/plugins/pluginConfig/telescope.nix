@@ -116,6 +116,16 @@
       desc = "Live Grep";
     };
     # << SEARCH
+    # CODE
+    "<leader>cd" = {
+      action = "diagnostics";
+      desc = "Find diagnostics";
+    };
+    "<leader>cx" = {
+      action = "quickfix";
+      desc = "Code actions";
+    };
+    # << CODE
     # OTHER
     "<M-x>" = {
       action = "commands";

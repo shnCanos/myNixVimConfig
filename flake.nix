@@ -8,8 +8,7 @@
 
   outputs = { self, nixpkgs, nixvim, flake-utils, ... }@inputs:
     let config = import ./config; # import the module directly
-    in
-    flake-utils.lib.eachDefaultSystem (system:
+    in flake-utils.lib.eachDefaultSystem (system:
       let
         nixvimLib = nixvim.lib.${system};
         pkgs = import nixpkgs { inherit system; };
@@ -20,8 +19,7 @@
           # You can use `extraSpecialArgs` to pass additional arguments to your module files
           extraSpecialArgs = { inherit self; };
         };
-      in
-      {
+      in {
         checks = {
           # Run `nix flake check .` to verify that your config is not broken
           default = nixvimLib.check.mkTestDerivationFromNvim {

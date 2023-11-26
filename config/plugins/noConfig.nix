@@ -15,14 +15,14 @@
     nvim-autopairs.enable = true;
     rainbow-delimiters.enable = true;
     surround.enable = true; # Change surrounding delimiters
-    todo-comments.enable = true;
+    todo-comments.enable = true; # TODO Change defaults
     fidget.enable = true; # Notifications about lsp status
     gitsigns.enable = true; # Git Integration
     markdown-preview.enable = true; # Markdown and Preview
-    diffview.enable = true;
+    diffview.enable = true; # TODO Learn how to use this
     mini.enable = true;
     comment-nvim.enable = true;
-    better-escape.enable = true;
+    better-escape.enable = true; # jk as escape
     project-nvim.enable = true;
     trouble.enable = true;
     undotree.enable = true;
