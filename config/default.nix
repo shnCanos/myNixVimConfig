@@ -25,6 +25,7 @@
       smartindent = true;
       undolevels = 10000; # More undo, probably
       wrap = false; # Disable line wrap
+      cmdheight = 0; # Hide command line when not being used
     };
 
     clipboard = {

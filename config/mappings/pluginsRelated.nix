@@ -8,7 +8,7 @@ in [
   {
     mode = "n";
     key = "<leader>ot";
-    action = cmd "ToggleTerm";
+    action = cmd "ToggleTerm size=17";
     options.desc = "Toggle ToggleTerm";
   }
   {
