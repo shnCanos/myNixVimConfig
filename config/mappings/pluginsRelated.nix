@@ -64,14 +64,21 @@ in [
 ] ++
 
 # neotree
-[{
-  key = "<leader>e";
-  action = cmd "Neotree toggle";
-  options.desc = "Open/Focus neotree";
-}] ++
+[
+  {
+    key = "<leader>e";
+    action = cmd "Neotree toggle";
+    options.desc = "Open/Focus neotree";
+  }
+  {
+    key = "<leader>ff";
+    action = cmd "Neotree toggle reveal_force_cwd";
+    options.desc = "Reveal File in Neotree";
+  }
+]
 # HACK Telescope
-[{
-  key = "<leader>ff";
-  action = cmd "Telescope file_browser";
-  options.desc = "Browse Files";
-}]
+# [{
+#   key = "<leader>ff";
+#   action = cmd "Telescope file_browser";
+#   options.desc = "Browse Files";
+# }]
