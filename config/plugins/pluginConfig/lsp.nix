@@ -11,6 +11,10 @@
       enable = true;
       installLanguageServer = true;
       filetypes = [ "vimwiki" "org" "markdown" "text" ];
+      extraOptions.settings = {
+        language = [ "pt_PT" "en_GB" ];
+        dictionary = { "en_GB" = [ "soupa" "haruka" "kana" ]; };
+      };
     };
     rust-analyzer = {
       enable = true;
