@@ -10,12 +10,12 @@
     ltex = {
       enable = true;
       installLanguageServer = true;
-      filetypes = [ "vimwiki" "org" "markdown" "text" ];
       extraOptions.settings = {
         language = [ "pt_PT" "en_GB" ];
-        dictionary = { "en_GB" = [ "soupa" "haruka" "kana" ]; };
+        dictionary = { "en_GB" = [ "Soupa" "Haruka" "Kana" "NixVim" ]; };
         completionEnabled = true;
       };
+      settings.additionalRules.enablePickyRules = true;
     };
     rust-analyzer = {
       enable = true;

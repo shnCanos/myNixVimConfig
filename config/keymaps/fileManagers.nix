@@ -4,7 +4,7 @@ in [
   # Oil
   {
     key = "<leader>ff";
-    action = cmd "Oil --float";
+    action = cmd "Oil";
     options.desc = "Open oil";
   }
 

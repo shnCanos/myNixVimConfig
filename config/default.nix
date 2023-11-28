@@ -8,7 +8,7 @@
     clipboard = import ./core/clipboard.nix { };
     globals = import ./core/globals.nix { };
     plugins = import ./plugins { };
-    keymaps = import ./mappings { };
+    keymaps = import ./keymaps { };
   };
 
 }
