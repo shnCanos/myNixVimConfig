@@ -32,7 +32,7 @@
     neogit.enable = true; # git stuff
     luasnip.enable = true;
     lspsaga.enable = true;
-    lsp-lines.enable = true;
+    # lsp-lines.enable = true;
   };
 
 }
