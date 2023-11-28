@@ -1,9 +1,22 @@
 { ... }:
 
 {
-  imports = [ ./pluginConfig ];
-
   plugins = {
+    # With config
+    treesitter = import ./pluginConfig/treesitter.nix { };
+    toggleterm = import ./pluginConfig/toggleterm.nix { };
+    barbar = import ./pluginConfig/barbar.nix { }; # Tabs
+    neo-tree = import ./pluginConfig/neotree.nix { };
+    conform-nvim = import ./pluginConfig/conform.nix { }; # Formatter
+    none-ls = import ./pluginConfig/none-ls.nix { }; # Also formatter? hmm
+    presence-nvim = import ./pluginConfig/presence.nix { };
+    telescope = import ./pluginConfig/telescope.nix { };
+    lsp = import ./pluginConfig/lsp.nix { };
+    nvim-cmp = import ./pluginConfig/nvim-cmp.nix { };
+    notify = import ./pluginConfig/notify.nix { };
+    oil = import ./pluginConfig/oil.nix { };
+
+    # Without config
     # treesitter-context.enable = true;
     treesitter-refactor.enable = true;
     which-key.enable = true;
@@ -33,6 +46,7 @@
     luasnip.enable = true;
     lspsaga.enable = true;
     # lsp-lines.enable = true;
+    # nvim-ufo.enable = true; # For some reason, this thing is way too agressive. It folds everything.
   };
 
 }
