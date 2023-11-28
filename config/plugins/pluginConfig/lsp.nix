@@ -14,6 +14,7 @@
       extraOptions.settings = {
         language = [ "pt_PT" "en_GB" ];
         dictionary = { "en_GB" = [ "soupa" "haruka" "kana" ]; };
+        completionEnabled = true;
       };
     };
     rust-analyzer = {
