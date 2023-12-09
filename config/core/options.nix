@@ -13,6 +13,6 @@
   showmode = false; # Dont show mode since we have a statusline
   smartindent = true;
   undolevels = 10000; # More undo, probably
-  wrap = false; # Disable line wrap
-  cmdheight = 0; # Hide command line when not being used
+  wrap = true; # Enable line wrap. Yes, I like this setting like this
+  # cmdheight = 0; # Hide command line when not being used
 }

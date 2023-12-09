@@ -1,11 +1,19 @@
 { ... }:
-let cmd = command: "<cmd>${command}<cr>";
+let
+  cmd = command: "<cmd>${command}<cr>";
+  terminalCommand = cmd "ToggleTerm size=17";
 in [
   # TOGGLETERM
   {
     mode = "n";
     key = "<leader>ot";
-    action = cmd "ToggleTerm size=17";
+    action = terminalCommand;
+    options.desc = "Toggle ToggleTerm";
+  }
+  {
+    mode = [ "n" "t" ];
+    key = "<C-k>";
+    action = terminalCommand;
     options.desc = "Toggle ToggleTerm";
   }
   {

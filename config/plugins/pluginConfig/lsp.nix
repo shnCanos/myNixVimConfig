@@ -15,7 +15,7 @@
         language = [ "pt_PT" "en_GB" ];
         checkFrequency = "save";
         dictionary = { "en_GB" = [ "Soupa" "Haruka" "Kana" "NixVim" ]; };
-        completionEnabled = true;
+        completionEnabled = false;
       };
       settings.additionalRules.enablePickyRules = true;
     };

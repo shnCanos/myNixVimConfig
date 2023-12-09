@@ -9,7 +9,7 @@
     previous = "H";
     pin = "<leader>bp";
     pick = "<leader>bf";
-    movePrevious = "<leader>bh";
-    moveNext = "<leader>bl";
+    movePrevious = "<C-h>";
+    moveNext = "<C-l>";
   };
 }
