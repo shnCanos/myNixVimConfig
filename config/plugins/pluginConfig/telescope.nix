@@ -13,6 +13,7 @@
     project-nvim.enable = true;
     frecency.enable = true;
   };
+
   keymaps = {
     # FIND
     "<leader>fh" = {
@@ -144,5 +145,6 @@
       desc = "Insert Symbols";
     };
     # << OTHER
+
   };
 }

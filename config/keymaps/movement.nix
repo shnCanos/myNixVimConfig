@@ -9,14 +9,16 @@ in [
     action = "<c-w>";
   }
   # Better movement
-  {
-    key = "j";
-    action = "gj";
-  }
-  {
-    key = "k";
-    action = "gk";
-  }
+  # {
+  #   key = "j";
+  #   action = "gj";
+  # }
+  # {
+  #   key = "k";
+  #   action = "gk";
+  # }
+  # Removed because commands like dj would not work properly lol
+
   {
     key = "<leader>qq";
     action = cmd "qa";
