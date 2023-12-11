@@ -1,6 +1,59 @@
 { ... }:
 
-[
+let cmd = command: "<cmd>${command}<cr>";
+in [
+  # BUFFER
+  {
+    key = "<leader>bs";
+    action = cmd "w";
+    options.desc = "Save buffer";
+  }
+  {
+    key = "<leader>bK";
+    action = cmd "bd!";
+    options.desc = "Force Kill Buffer";
+  }
+  {
+    key = "<leader>bd";
+    action = cmd "!rm %";
+    options.desc = "Delete file";
+  }
+  # -- BUFFER
+
+  # DELETE WORD
+  {
+    mode = [ "i" "t" "n" ];
+    key = "<c-BS>";
+    action = "<c-w>";
+  }
+  # Better movement
+  # {
+  #   key = "j";
+  #   action = "gj";
+  # }
+  # {
+  #   key = "k";
+  #   action = "gk";
+  # }
+  # Removed because commands like dj would not work properly lol
+
+  # QUIT
+  {
+    key = "<leader>qq";
+    action = cmd "qa";
+  }
+  {
+    key = "<leader>qw";
+    action = cmd "wqa";
+  }
+  {
+    key = "<leader>Sf";
+    action = cmd "!dolphin";
+    options.desc = "Open dolphin here";
+  }
+  # -- QUIT
+
+  # WINDOWS
   {
     mode = "n";
     key = "<leader>wv";
@@ -73,4 +126,5 @@
     action = "<c-w>o";
     options.desc = "Close All Other Windows";
   }
+  # -- Windows
 ]

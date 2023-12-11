@@ -1,4 +1,8 @@
-{ ... }: {
-  enable = true;
-  backgroundColour = "#000000";
+{ ... }:
+
+{
+  plugins.notify = {
+    enable = true;
+    backgroundColour = "#000000";
+  };
 }

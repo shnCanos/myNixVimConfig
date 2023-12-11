@@ -1,50 +1,54 @@
-{ ... }: {
-  enable = true;
-  snippet.expand = "luasnip";
-  sources = [
-    { name = "path"; }
-    { name = "nvim_lsp"; }
-    { name = "luasnip"; }
-    { name = "buffer"; }
-    { name = "crates"; }
-    { name = "neorg"; }
-  ];
+{ ... }:
 
-  mapping = {
-    # SELECTION
-    "<C-n>" =
-      "cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert })";
-    "<C-p>" =
-      "cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert })";
-    "<C-j>" =
-      "cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert })";
-    "<C-k>" =
-      "cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert })";
-    # << SELECTION
+{
+  plugins.nvim-cmp = {
+    enable = true;
+    snippet.expand = "luasnip";
+    sources = [
+      { name = "path"; }
+      { name = "nvim_lsp"; }
+      { name = "luasnip"; }
+      { name = "buffer"; }
+      { name = "crates"; }
+      { name = "neorg"; }
+    ];
 
-    # DOCS
-    "<C-b>" = "cmp.mapping.scroll_docs(-4)";
-    "<C-f>" = "cmp.mapping.scroll_docs(4)";
-    "<C-s-k>" = "cmp.mapping.scroll_docs(-4)";
-    "<C-s-j>" = "cmp.mapping.scroll_docs(4)";
-    # << DOCS
+    mapping = {
+      # SELECTION
+      "<C-n>" =
+        "cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert })";
+      "<C-p>" =
+        "cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert })";
+      "<C-j>" =
+        "cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert })";
+      "<C-k>" =
+        "cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert })";
+      # << SELECTION
 
-    # COMPLETION
-    "<C-Space>" = "cmp.mapping.complete()";
-    "<C-Tab>" = "cmp.mapping.complete()"; # Rarely used?
-    "<Tab>" = "cmp.mapping.confirm( { select = true })";
-    # << COMPLETION
+      # DOCS
+      "<C-b>" = "cmp.mapping.scroll_docs(-4)";
+      "<C-f>" = "cmp.mapping.scroll_docs(4)";
+      "<C-s-k>" = "cmp.mapping.scroll_docs(-4)";
+      "<C-s-j>" = "cmp.mapping.scroll_docs(4)";
+      # << DOCS
 
-    # OTHER
-    "<C-e>" = "cmp.mapping.abort()";
-    "<c-CR>" = "cmp.mapping.confirm({ select = true })";
-    # << OTHER
+      # COMPLETION
+      "<C-Space>" = "cmp.mapping.complete()";
+      "<C-Tab>" = "cmp.mapping.complete()"; # Rarely used?
+      "<Tab>" = "cmp.mapping.confirm( { select = true })";
+      # << COMPLETION
 
-    # Probably not going to be used
-    "<S-CR>" = ''
-      cmp.mapping.confirm({
-              behavior = cmp.ConfirmBehavior.Replace,
-              select = true,
-            })'';
+      # OTHER
+      "<C-e>" = "cmp.mapping.abort()";
+      "<c-CR>" = "cmp.mapping.confirm({ select = true })";
+      # << OTHER
+
+      # Probably not going to be used
+      "<S-CR>" = ''
+        cmp.mapping.confirm({
+          behavior = cmp.ConfirmBehavior.Replace,
+          select = true,
+        })'';
+    };
   };
 }
