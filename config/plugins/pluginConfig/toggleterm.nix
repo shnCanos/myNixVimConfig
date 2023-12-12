@@ -21,7 +21,7 @@
     }
     {
       mode = [ "n" "t" ];
-      key = "<C-k>";
+      key = "<C-o>";
       action = terminalCommand;
       options.desc = "Toggle ToggleTerm";
     }

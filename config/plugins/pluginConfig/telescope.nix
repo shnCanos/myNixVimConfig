@@ -146,7 +146,14 @@
         desc = "Insert Symbols";
       };
       # << OTHER
+    };
 
+    # Workaround for working keymaps
+    defaults.mappings.i = {
+      "<c-j>".__raw = ''require("telescope.actions").move_selection_next'';
+      "<c-k>".__raw = ''require("telescope.actions").move_selection_previous'';
+      "<c-s-k>".__raw = ''require("telescope.actions").preview_scrolling_up'';
+      "<c-s-j>".__raw = ''require("telescope.actions").preview_scrolling_down'';
     };
   };
 
