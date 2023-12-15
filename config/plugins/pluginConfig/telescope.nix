@@ -154,6 +154,7 @@
       "<c-k>".__raw = ''require("telescope.actions").move_selection_previous'';
       "<c-s-k>".__raw = ''require("telescope.actions").preview_scrolling_up'';
       "<c-s-j>".__raw = ''require("telescope.actions").preview_scrolling_down'';
+      # "<c-BS>" = "<c-w>";
     };
   };
 

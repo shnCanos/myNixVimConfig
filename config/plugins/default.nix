@@ -17,6 +17,8 @@
     ./pluginConfig/undotree.nix
     ./pluginConfig/lspsaga.nix
     ./pluginConfig/neogit.nix
+    ./pluginConfig/neorg.nix
+    ./pluginConfig/lualine.nix
   ];
 
   plugins = {
@@ -44,8 +46,8 @@
     better-escape.enable = true; # jk as escape
     project-nvim.enable = true;
     trouble.enable = true;
-    lualine.enable = true; # Maybe add configuration later?
     luasnip.enable = true;
+    noice.enable = true;
     # lsp-lines.enable = true;
     # nvim-ufo.enable = true; # For some reason, this thing is way too agressive. It folds everything.
   };

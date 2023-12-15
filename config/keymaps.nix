@@ -18,12 +18,26 @@ in [
     action = cmd "!rm %";
     options.desc = "Delete file";
   }
+  {
+    key = "<leader>bk";
+    action = cmd "bd";
+    options.desc = "Kill Buffer";
+  }
+  {
+    key = "L";
+    action = cmd "bnext";
+    options.desc = "Next Buffer";
+  }
+  {
+    key = "H";
+    action = cmd "bprevious";
+    options.desc = "Previous Buffer";
+  }
   # << BUFFER
 
   # MOVEMENT
-  # DELETE WORD
-  {
-    mode = [ "i" "t" "n" ];
+  { # DELETE WORD
+    mode = [ "i" "t" "n" "c" ];
     key = "<c-BS>";
     action = "<c-w>";
   }
@@ -49,8 +63,8 @@ in [
     action = cmd "wqa";
   }
   {
-    key = "<leader>Sf";
-    action = cmd "!dolphin";
+    key = "<leader>fF";
+    action = cmd "!dolphin .";
     options.desc = "Open dolphin here";
   }
   # << QUIT

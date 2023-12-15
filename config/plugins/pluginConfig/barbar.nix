@@ -2,12 +2,12 @@
 
 {
   plugins.barbar = {
-    enable = true;
+    enable = false;
     autoHide = true;
     keymaps = {
-      close = "<leader>bk";
-      next = "L";
-      previous = "H";
+      # close = "<leader>bk";
+      # next = "L";
+      # previous = "H";
       pin = "<leader>bp";
       pick = "<leader>bf";
       movePrevious = "<C-h>";
