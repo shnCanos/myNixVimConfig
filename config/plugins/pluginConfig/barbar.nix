@@ -2,7 +2,7 @@
 
 {
   plugins.barbar = {
-    enable = false;
+    enable = true;
     autoHide = true;
     keymaps = {
       # close = "<leader>bk";

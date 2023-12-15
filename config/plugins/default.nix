@@ -4,7 +4,7 @@
   imports = [
     ./pluginConfig/treesitter.nix
     ./pluginConfig/toggleterm.nix
-    ./pluginConfig/barbar.nix # Tabs
+    # ./pluginConfig/barbar.nix # Tabs
     ./pluginConfig/neotree.nix
     ./pluginConfig/conform.nix # Formatter
     ./pluginConfig/none-ls.nix # Also formatter? hmm
