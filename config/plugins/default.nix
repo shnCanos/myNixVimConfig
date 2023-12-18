@@ -19,6 +19,8 @@
     ./pluginConfig/neogit.nix
     ./pluginConfig/neorg.nix
     ./pluginConfig/lualine.nix
+    ./pluginConfig/noice.nix
+    ./pluginConfig/firenvim.nix # Continue later
   ];
 
   plugins = {
@@ -47,7 +49,6 @@
     project-nvim.enable = true;
     trouble.enable = true;
     luasnip.enable = true;
-    noice.enable = true;
     # lsp-lines.enable = true;
     # nvim-ufo.enable = true; # For some reason, this thing is way too agressive. It folds everything.
   };
