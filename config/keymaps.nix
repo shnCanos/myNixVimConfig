@@ -14,13 +14,11 @@ in [
     options.desc = "Force Kill Buffer";
   }
   {
-    key = "<leader>bd";
-    action = cmd "!rm %";
-    options.desc = "Delete file";
-  }
-  {
     key = "<leader>bk";
-    action = cmd "bd";
+    # HACK: so it doesn't close the window
+    # Issue: If there are two windows with the same buffer opened,
+    # It closes both (for obvious reasons). 
+    action = "<c-w>s" + "<c-w>j" + cmd "bl" + "<c-w>k" + cmd "bd";
     options.desc = "Kill Buffer";
   }
   {
@@ -41,16 +39,6 @@ in [
     key = "<c-BS>";
     action = "<c-w>";
   }
-  # Better movement
-  # {
-  #   key = "j";
-  #   action = "gj";
-  # }
-  # {
-  #   key = "k";
-  #   action = "gk";
-  # }
-  # Removed because commands like dj would not work properly lol
   # << MOVEMENT
 
   # QUIT
@@ -130,5 +118,28 @@ in [
     action = "<c-w>o";
     options.desc = "Close All Other Windows";
   }
-  # << Windows
+  # << WINDOWS
+
+  # REMOVED
+  # ---
+  # REASON: lack of use
+  # {
+  #   key = "<leader>bd";
+  #   action = cmd "!rm %";
+  #   options.desc = "Delete file";
+  # }
+  # ---
+  # REASON: commands like dj would not work properly
+  # Better movement
+  # {
+  #   key = "j";
+  #   action = "gj";
+  # }
+  # {
+  #   key = "k";
+  #   action = "gk";
+  # }
+  # ---
+  # << REMOVED
+
 ]

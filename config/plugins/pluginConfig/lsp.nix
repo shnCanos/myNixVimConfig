@@ -12,13 +12,29 @@
       ltex = { # Language tool
         enable = true;
         installLanguageServer = true;
-        extraOptions.settings = {
-          language = [ "pt_PT" "en_GB" ];
-          checkFrequency = "save";
-          dictionary = { "en_GB" = [ "Soupa" "Haruka" "Kana" "NixVim" ]; };
-          completionEnabled = false;
+        settings = {
+          language = "en-GB";
+          # checkFrequency = "save";
+          dictionary = {
+            "en-GB" = [
+              "NixVim"
+
+              "Soupa"
+              "Kana"
+              "Haruka"
+
+              # Yep
+              "sus"
+              "nsfw"
+              "fr"
+              "rn"
+              "welp"
+            ];
+          };
+          completionEnabled = true;
+          additionalRules.enablePickyRules = true;
+          # statusBarItem = true; # I don't really understand what this does
         };
-        settings.additionalRules.enablePickyRules = true;
       };
       rust-analyzer = { # Rust
         enable = true;
