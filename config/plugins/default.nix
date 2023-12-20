@@ -4,7 +4,7 @@
   imports = [
     ./pluginConfig/treesitter.nix
     ./pluginConfig/toggleterm.nix
-    # ./pluginConfig/barbar.nix # Tabs
+    # ./pluginConfig/barbar.nix # Tabs (I don't use tabs)
     ./pluginConfig/neotree.nix
     ./pluginConfig/conform.nix # Formatter
     ./pluginConfig/none-ls.nix # Also formatter? hmm
@@ -20,7 +20,7 @@
     ./pluginConfig/neorg.nix
     ./pluginConfig/lualine.nix
     ./pluginConfig/noice.nix
-    ./pluginConfig/firenvim.nix # Continue later
+    # ./pluginConfig/firenvim.nix # Cool, but not in use
   ];
 
   plugins = {
