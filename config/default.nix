@@ -1,4 +1,4 @@
-{ ... }: {
+{ cmd, ... }: {
 
   imports = [ ./plugins ];
 
@@ -47,6 +47,6 @@
       filetype_pl = "prolog"; # pl = prolog, not perl
     };
 
-    keymaps = import ./keymaps.nix { };
+    keymaps = import ./keymaps.nix { inherit cmd; };
   };
 }

@@ -1,4 +1,4 @@
-{ ... }:
+{ cmd, ... }:
 
 {
   plugins.oil = {
@@ -10,8 +10,7 @@
     };
   };
 
-  keymaps = let cmd = command: "<cmd>${command}<cr>";
-  in [
+  keymaps = [
     # Oil
     {
       key = "<leader>ff";

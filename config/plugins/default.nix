@@ -2,33 +2,32 @@
 
   # With config
   imports = [
-    ./pluginConfig/treesitter.nix
+    # ./pluginConfig/treesitter.nix
     ./pluginConfig/toggleterm.nix
     # ./pluginConfig/barbar.nix # Tabs (I don't use tabs)
     ./pluginConfig/neotree.nix
-    ./pluginConfig/conform.nix # Formatter
-    ./pluginConfig/none-ls.nix # Also formatter? hmm
+    # ./pluginConfig/conform.nix # Formatter
+    # ./pluginConfig/none-ls.nix # Also formatter? hmm
     ./pluginConfig/presence.nix
     ./pluginConfig/telescope.nix
     ./pluginConfig/lsp.nix
     ./pluginConfig/nvim-cmp.nix
-    ./pluginConfig/notify.nix
     ./pluginConfig/oil.nix
     ./pluginConfig/undotree.nix
     ./pluginConfig/lspsaga.nix
     ./pluginConfig/neogit.nix
     ./pluginConfig/neorg.nix
-    ./pluginConfig/lualine.nix
-    ./pluginConfig/noice.nix
+    # ./pluginConfig/lualine.nix
+    # ./pluginConfig/noice.nix
     # ./pluginConfig/firenvim.nix # Cool, but not in use
+    ./pluginConfig/alpha.nix
+    ./pluginConfig/which-key.nix
   ];
 
   plugins = {
     # Without config
     # treesitter-context.enable = true;
     treesitter-refactor.enable = true;
-    which-key.enable = true;
-    auto-session.enable = true; # Recover session
     barbecue.enable = true; # That vscode style bar
     rust-tools.enable = true;
     nix.enable = true; # Not too sure
@@ -38,19 +37,88 @@
     nvim-autopairs.enable = true;
     rainbow-delimiters.enable = true;
     surround.enable = true; # Change surrounding delimiters
-    todo-comments.enable = true; # TODO Change defaults
+    # TODO: Change defaults (what did I mean by this?)
+    todo-comments.enable = true;
     fidget.enable = true; # Notifications about lsp status
     gitsigns.enable = true; # Git Integration
     markdown-preview.enable = true; # Markdown and Preview
-    diffview.enable = true; # TODO Learn how to use this
+    # TODO: Learn how to use this
+    diffview.enable = true;
     mini.enable = true;
     comment-nvim.enable = true;
     better-escape.enable = true; # jk as escape
     project-nvim.enable = true;
     trouble.enable = true;
     luasnip.enable = true;
+    noice.enable = true;
     # lsp-lines.enable = true;
     # nvim-ufo.enable = true; # For some reason, this thing is way too agressive. It folds everything.
+
+    # Recover session
+    auto-session = {
+      enable = true;
+      autoRestore.enabled = false;
+      autoSave.enabled = true;
+      bypassSessionSaveFileTypes = [ "alpha" ];
+    };
+
+    notify = {
+      enable = true;
+      backgroundColour = "#000000";
+    };
+
+    treesitter = {
+      enable = true;
+      indent = true;
+      nixvimInjections = true;
+    };
+
+    none-ls = {
+      enable = true;
+      sources = {
+        formatting = {
+          nixfmt.enable = true;
+          black.enable = true;
+          rustfmt.enable = true;
+          shfmt.enable = true;
+          isort.enable = true;
+          markdownlint.enable = true;
+        };
+      };
+    };
+
+    lualine = {
+      enable = true;
+      sections = {
+        lualine_z = [ ''" " .. os.date("%R")'' ];
+        lualine_c = [ "filename" ];
+      };
+    };
+
+    conform-nvim = {
+      # Formatter
+      enable = true;
+      formatOnSave = { lspFallback = true; };
+      formattersByFt = {
+        lua = [ "stylua" ];
+        python = [ "isort" "black" ];
+        nix = [ "nixfmt" ];
+      };
+    };
+
+    barbar = {
+      enable = false; # I do not use tabs
+      autoHide = true;
+      keymaps = {
+        # close = "<leader>bk";
+        # next = "L";
+        # previous = "H";
+        pin = "<leader>bp";
+        pick = "<leader>bf";
+        movePrevious = "<C-h>";
+        moveNext = "<C-l>";
+      };
+    };
   };
 
   extraPlugins = with pkgs.vimPlugins; [ lazygit-nvim telescope-symbols-nvim ];

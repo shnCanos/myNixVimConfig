@@ -14,7 +14,7 @@
         installLanguageServer = true;
         settings = {
           language = "en-GB";
-          # checkFrequency = "save";
+          checkFrequency = "save";
           dictionary = {
             "en-GB" = [
               "NixVim"

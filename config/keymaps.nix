@@ -1,7 +1,6 @@
-{ ... }:
+{ cmd, ... }:
 
-let cmd = command: "<cmd>${command}<cr>";
-in [
+[
   # BUFFER
   {
     key = "<leader>bs";

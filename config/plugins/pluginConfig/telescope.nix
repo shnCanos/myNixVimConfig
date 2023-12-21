@@ -1,4 +1,4 @@
-{ ... }:
+{ cmd, ... }:
 
 {
   plugins.telescope = {
@@ -63,7 +63,11 @@
       };
       "<leader>sb" = {
         action = "current_buffer_fuzzy_find";
-        desc = "Buffer";
+        desc = "Search Buffer";
+      };
+      "<leader>/" = {
+        action = "current_buffer_fuzzy_find";
+        desc = "Search Buffer";
       };
       "<leader>sc" = {
         action = "command_history";
@@ -166,8 +170,7 @@
     };
   };
 
-  keymaps = let cmd = command: "<cmd>${command}<cr>";
-  in [
+  keymaps = [
     {
       # (For some reason this gives me an error if I put it in telescope itself)
       key = "<leader>pf";

@@ -1,8 +1,7 @@
-{ ... }: {
+{ cmd, ... }: {
   plugins.undotree.enable = true;
 
-  keymaps = let cmd = command: "<cmd>${command}<cr>";
-  in [
+  keymaps = [
     # Open UndoTree
     {
       key = "<leader>fu";

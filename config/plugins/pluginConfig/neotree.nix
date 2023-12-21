@@ -1,4 +1,4 @@
-{ ... }:
+{ cmd, ... }:
 
 {
   plugins.neo-tree = {
@@ -9,10 +9,10 @@
         "<tab>" = "toggle_node";
       };
     };
+
   };
 
-  keymaps = let cmd = command: "<cmd>${command}<cr>";
-  in [
+  keymaps = [
     # Neotree
     {
       key = "<leader>e";

@@ -1,7 +1,6 @@
-{ ... }: {
+{ cmd, ... }: {
   plugins.lspsaga.enable = true;
-  keymaps = let cmd = command: "<cmd>${command}<cr>";
-  in [
+  keymaps = [
     {
       key = "K";
       options.desc = "Lsp Hover";

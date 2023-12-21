@@ -1,4 +1,4 @@
-{ ... }:
+{ cmd, ... }:
 
 {
   plugins.toggleterm = {
@@ -8,9 +8,7 @@
     direction = "horizontal";
   };
 
-  keymaps = let
-    cmd = command: "<cmd>${command}<cr>";
-    terminalCommand = cmd "ToggleTerm size=17";
+  keymaps = let terminalCommand = cmd "ToggleTerm size=17";
   in [
     # TOGGLETERM
     {
