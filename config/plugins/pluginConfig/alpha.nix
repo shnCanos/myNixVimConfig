@@ -33,7 +33,7 @@
       }
       {
         type = "padding";
-        val = 10;
+        val = 8;
       }
       {
         type = "group";
@@ -63,6 +63,11 @@
             command = cmd "SessionRestore";
             desc = " Restore Session (cwd)";
             shortcut = "s";
+          }
+          {
+            command = cmd "Neogit";
+            desc = "󰊢 Open Neogit";
+            shortcut = "g";
           }
           {
             command = cmd "qa";
