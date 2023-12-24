@@ -37,7 +37,7 @@
       }
       {
         type = "group";
-        opts.spacing = 2;
+        opts.spacing = 1;
         val = [
           {
             command = cmd "ene";
@@ -86,7 +86,7 @@
           position = "center";
         };
         type = "text";
-        val = "Bandana dee's extremely cool config";
+        val = "Bandana dee's supercool config";
       }
     ];
   };

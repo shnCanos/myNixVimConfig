@@ -1,13 +1,11 @@
 { ... }: {
   plugins.neorg = {
-    enable = builtins.trace
-      "Hello. You are rebuilding the config. This line is in the neorg file!"
-      true;
+    enable = true;
 
     modules = {
-      "core.defaults" = { };
-      "core.concealer" = { };
-      # "core.integrations.telescope" = { };
+      "core.defaults" = { __empty = null; };
+      "core.concealer" = { __empty = null; };
+      "core.integrations.telescope" = { __empty = null; };
       "core.dirman" = {
         config = {
           workspaces = {

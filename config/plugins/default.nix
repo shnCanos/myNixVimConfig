@@ -65,6 +65,8 @@
     notify = {
       enable = true;
       backgroundColour = "#000000";
+      timeout = 0; # I don't know why
+      topDown = false;
     };
 
     treesitter = {
@@ -121,5 +123,9 @@
     };
   };
 
-  extraPlugins = with pkgs.vimPlugins; [ lazygit-nvim telescope-symbols-nvim ];
+  extraPlugins = with pkgs.vimPlugins; [
+    lazygit-nvim
+    telescope-symbols-nvim
+    neorg-telescope # WARNING: Might not be necessary
+  ];
 }
