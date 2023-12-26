@@ -4,9 +4,9 @@
   keymaps = [
     # Open UndoTree
     {
-      key = "<leader>fu";
+      key = "<leader>su";
       action = cmd "UndotreeShow";
-      options.desc = "Find Undo";
+      options.desc = "Search Undo History";
     }
   ];
 }

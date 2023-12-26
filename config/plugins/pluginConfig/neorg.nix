@@ -5,7 +5,6 @@
     modules = {
       "core.defaults" = { __empty = null; };
       "core.concealer" = { __empty = null; };
-      "core.integrations.telescope" = { __empty = null; };
       "core.dirman" = {
         config = {
           workspaces = {
@@ -14,6 +13,11 @@
           };
         };
       };
+      # Seems to need Neovim 0.10?
+      # "core.ui.calendar" = { __empty = null; };
+
+      # Not using this currently
+      "core.integrations.telescope" = { __empty = null; };
     };
   };
 }

@@ -9,6 +9,6 @@
     require("firenvim")
 
     -- vim.fn['firenvim#install'](0)
-    -- Is this necessary? I don't think so
+    -- This is only necessary in the first run
   '';
 }

@@ -39,7 +39,6 @@
     surround.enable = true; # Change surrounding delimiters
     # TODO: Change defaults (what did I mean by this?)
     todo-comments.enable = true;
-    fidget.enable = true; # Notifications about lsp status
     gitsigns.enable = true; # Git Integration
     markdown-preview.enable = true; # Markdown and Preview
     # TODO: Learn how to use this
@@ -65,8 +64,9 @@
     notify = {
       enable = true;
       backgroundColour = "#000000";
-      timeout = 0; # I don't know why
-      topDown = false;
+      timeout = 1000; # I don't know why
+      topDown = true; # It looks terrible with false
+      stages = "slide";
     };
 
     treesitter = {
@@ -112,14 +112,17 @@
       enable = false; # I do not use tabs
       autoHide = true;
       keymaps = {
-        # close = "<leader>bk";
-        # next = "L";
-        # previous = "H";
         pin = "<leader>bp";
         pick = "<leader>bf";
         movePrevious = "<C-h>";
         moveNext = "<C-l>";
       };
+    };
+
+    # Notifications about lsp status
+    fidget = {
+      enable = false;
+      align.bottom = false;
     };
   };
 

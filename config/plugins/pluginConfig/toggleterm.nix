@@ -19,7 +19,7 @@
     }
     {
       mode = [ "n" "t" ];
-      key = "<C-o>";
+      key = "<C-/>";
       action = terminalCommand;
       options.desc = "Toggle ToggleTerm";
     }
