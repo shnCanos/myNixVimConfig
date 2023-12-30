@@ -50,8 +50,13 @@
             shortcut = "p";
           }
           {
+            command = cmd "Oil";
+            desc = "󰥨 File Explorer";
+            shortcut = "e";
+          }
+          {
             command = cmd "Telescope find_files";
-            desc = "󰍉 Find File";
+            desc = "󰍉 Telescope Find Files";
             shortcut = "f";
           }
           {

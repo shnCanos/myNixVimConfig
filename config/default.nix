@@ -29,8 +29,8 @@
       undolevels = 10000; # More undo, probably
       linebreak = true; # Enable line wrap. Yes, I like this setting like this
       # cmdheight = 0; # Hide command line when not being used
-
-      laststatus = 3; # Global lualine
+      #
+      # laststatus = 3; # Global lualine
     };
 
     clipboard = {
