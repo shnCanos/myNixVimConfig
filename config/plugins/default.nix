@@ -48,7 +48,7 @@
     better-escape.enable = true; # jk as escape
     project-nvim.enable = true;
     trouble.enable = true;
-    luasnip.enable = true;
+    # luasnip.enable = true;
     # noice.enable = true;
     # lsp-lines.enable = true;
     # nvim-ufo.enable = true; # For some reason, this thing is way too agressive. It folds everything.
@@ -63,7 +63,7 @@
 
     notify = {
       enable = true;
-      backgroundColour = "#000000";
+      # backgroundColour = "#000000";
       timeout = 1000; # I don't know why
       topDown = true; # It looks terrible with false
       stages = "slide";
@@ -134,7 +134,8 @@
     # Notifications about lsp status
     fidget = {
       enable = false;
-      align.bottom = false;
+      # They removed this haha
+      # align.bottom = false;
     };
   };
 
