@@ -29,6 +29,7 @@
               "fr"
               "rn"
               "welp"
+              "yoink"
             ];
           };
           completionEnabled = true;
