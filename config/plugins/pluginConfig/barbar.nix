@@ -7,6 +7,9 @@
       pick = "<leader>bf";
       movePrevious = "<C-h>";
       moveNext = "<C-l>";
+      close = "<leader>bk";
+      previous = "H";
+      next = "L";
     };
   };
 }

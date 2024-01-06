@@ -12,25 +12,25 @@
     action = cmd "bd!";
     options.desc = "Force Kill Buffer";
   }
-  {
-    key = "<leader>bk";
-    # HACK: so it doesn't close the window
-    # Issue: If there are two windows with the same buffer opened,
-    # It closes both (for obvious reasons). 
-    # action = "<c-w>s" + "<c-w>j" + cmd "bl" + "<c-w>k" + cmd "bd";
-    action = cmd "bd";
-    options.desc = "Kill Buffer";
-  }
-  {
-    key = "L";
-    action = cmd "bnext";
-    options.desc = "Next Buffer";
-  }
-  {
-    key = "H";
-    action = cmd "bprevious";
-    options.desc = "Previous Buffer";
-  }
+  # {
+  #   key = "<leader>bk";
+  #   # HACK: so it doesn't close the window
+  #   # Issue: If there are two windows with the same buffer opened,
+  #   # It closes both (for obvious reasons). 
+  #   # action = "<c-w>s" + "<c-w>j" + cmd "bl" + "<c-w>k" + cmd "bd";
+  #   action = cmd "bd";
+  #   options.desc = "Kill Buffer";
+  # }
+  # {
+  #   key = "L";
+  #   action = cmd "bnext";
+  #   options.desc = "Next Buffer";
+  # }
+  # {
+  #   key = "H";
+  #   action = cmd "bprevious";
+  #   options.desc = "Previous Buffer";
+  # }
   # << BUFFER
 
   # MOVEMENT

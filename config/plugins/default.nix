@@ -45,7 +45,10 @@
     # Notifications
     ./pluginConfig/notify.nix
 
-    # ./pluginConfig/barbar.nix # Tabs (I don't use tabs)
+    # Tabs
+    ./pluginConfig/barbar.nix
+
+    # ./pluginConfig/nvim-nu.nix
     # ./pluginConfig/firenvim.nix # Cool, but not in use
   ];
 
@@ -85,4 +88,5 @@
     telescope-symbols-nvim
     neorg-telescope # WARNING: Might not be necessary
   ];
+
 }
