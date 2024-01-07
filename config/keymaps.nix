@@ -45,15 +45,17 @@
   {
     key = "<leader>qq";
     action = cmd "qa";
+    options.desc = "Quit all";
   }
   {
     key = "<leader>qw";
     action = cmd "wqa";
+    options.desc = "Quit+Write all";
   }
   {
-    key = "<leader>fF";
-    action = cmd "!dolphin .";
-    options.desc = "Open dolphin here";
+    key = "<leader>qQ";
+    action = cmd "qa!";
+    options.desc = "Force Quit+Write all";
   }
   # << QUIT
 
@@ -119,6 +121,14 @@
     options.desc = "Close All Other Windows";
   }
   # << WINDOWS
+
+  # OTHER
+  {
+    key = "<leader>fF";
+    action = cmd "!dolphin .";
+    options.desc = "Open dolphin here";
+  }
+  # << OTHER
 
   # REMOVED
   # ---

@@ -1,4 +1,4 @@
-{ ... }: {
+{ cmd, ... }: {
   plugins.barbar = {
     enable = true;
     autoHide = true;
@@ -12,4 +12,10 @@
       next = "L";
     };
   };
+
+  keymaps = [{
+    key = "<leader>bo";
+    action = cmd "BufferCloseAllButVisible";
+    options.desc = "Close non-visible";
+  }];
 }
