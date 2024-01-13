@@ -38,6 +38,7 @@
 
     # Notes
     ./pluginConfig/neorg.nix
+    # ./pluginConfig/obsidian.nix # Hmm
 
     # Menu
     ./pluginConfig/alpha.nix
