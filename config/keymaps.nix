@@ -128,6 +128,16 @@
     action = cmd "!dolphin .";
     options.desc = "Open dolphin here";
   }
+  {
+    key = "<leader>ih";
+    action = "r“";
+    options.desc = "Replace left quotation mark here";
+  }
+  {
+    key = "<leader>il";
+    action = "r”";
+    options.desc = "Replace right quotation mark here";
+  }
   # << OTHER
 
   # REMOVED
