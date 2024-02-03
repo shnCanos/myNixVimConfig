@@ -1,8 +1,9 @@
-{ cmd, ... }:
+{ cmd, pkgs, ... }:
 
 {
   plugins.alpha = {
     enable = true;
+    # package = pkgs-alphanvim.vimPlugins.alpha-nvim;
     layout = [
       {
         type = "padding";

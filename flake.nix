@@ -20,7 +20,7 @@
           inherit pkgs;
           module = config;
           # You can use `extraSpecialArgs` to pass additional arguments to your module files
-          extraSpecialArgs = { inherit self cmd; };
+          extraSpecialArgs = { inherit inputs self cmd; };
         };
 
       in {
