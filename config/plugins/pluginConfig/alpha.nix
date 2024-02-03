@@ -2,7 +2,7 @@
 
 {
   plugins.alpha = {
-    enable = true;
+    enable = false;
     # package = pkgs-alphanvim.vimPlugins.alpha-nvim;
     layout = [
       {
