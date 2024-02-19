@@ -8,9 +8,14 @@
       { name = "path"; }
       { name = "nvim_lsp"; }
       { name = "luasnip"; }
+      { name = "dap"; }
       { name = "buffer"; }
       { name = "crates"; }
-      { name = "neorg"; }
+      {
+        name = "neorg";
+      }
+
+      # { name = "latex_symbols"; }
     ];
 
     mapping = {

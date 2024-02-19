@@ -1,17 +1,55 @@
 { ... }:
 
 {
+  plugins.clangd-extensions = {
+    enable = true;
+    enableOffsetEncodingWorkaround = true;
+    inlayHints = {
+      inline = "true";
+      showParameterHints = true;
+    };
+  };
+
   plugins.lsp = {
     enable = true;
     servers = {
-      # hls.enable = true; # Haskell
+      # C
+      clangd.enable = true;
+      cmake.enable = true;
+
+      # Haskell
+      # hls.enable = true; 
+
+      # Godot
       gdscript.enable = true;
-      pyright.enable = true; # Python
-      nil_ls.enable = true; # Nix
-      jsonls.enable = true; # Json
-      ltex = { # Language tool
+
+      # Python
+      pyright.enable = true;
+
+      # Nix
+      nil_ls.enable = true;
+
+      # Rust
+      rust-analyzer = {
         enable = true;
-        installLanguageServer = true;
+        installCargo = true;
+        installRustc = true;
+      };
+
+      # --- OTHER ---
+      # Json
+      jsonls.enable = true;
+
+      # Yaml
+      yamlls.enable = true;
+
+      # XML
+      lemminx.enable = true;
+
+      # Language tool 
+      ltex = {
+        enable = true;
+        # installLanguageServer = true; # Deprecated
         settings = {
           language = "en-GB";
           checkFrequency = "save";
@@ -36,11 +74,6 @@
           additionalRules.enablePickyRules = true;
           # statusBarItem = true; # I don't really understand what this does
         };
-      };
-      rust-analyzer = { # Rust
-        enable = true;
-        installCargo = true;
-        installRustc = true;
       };
     };
   };

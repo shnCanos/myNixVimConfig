@@ -2,7 +2,7 @@
 
 {
   plugins.alpha = {
-    enable = false;
+    enable = true;
     # package = pkgs-alphanvim.vimPlugins.alpha-nvim;
     layout = [
       {
@@ -38,47 +38,32 @@
       {
         type = "group";
         opts.spacing = 1;
-        val = [
-          {
-            command = cmd "ene";
-            desc = "  New file";
-            shortcut = "n";
-          }
-          {
-            command = cmd "Telescope projects";
-            desc = "󱓴 Find Project";
-            shortcut = "p";
-          }
-          {
-            command = cmd "Oil";
-            desc = "󰥨 File Explorer";
-            shortcut = "e";
-          }
-          {
-            command = cmd "Telescope find_files";
-            desc = "󰍉 Telescope Find Files";
-            shortcut = "f";
-          }
-          {
-            command = cmd "Telescope oldfiles";
-            desc = "  Recent Files";
-            shortcut = "r";
-          }
-          {
-            command = cmd "SessionRestore";
-            desc = " Restore Session (cwd)";
-            shortcut = "s";
-          }
-          {
-            command = cmd "Neogit";
-            desc = "󰊢 Open Neogit";
-            shortcut = "g";
-          }
-          {
-            command = cmd "qa";
-            desc = "󰗼 Quit Neovim";
-            shortcut = "q";
-          }
+        val = let
+          # Yoinked from https://github.com/siph/nixvim-flake/blob/master/config/visuals/alpha.nix after a month or so with alpha broken
+          mkButton = shortcut: cmd: val: hl: {
+            type = "button";
+            inherit val;
+            opts = {
+              inherit hl shortcut;
+              keymap = [ "n" shortcut cmd { } ];
+              position = "center";
+              cursor = 0;
+              width = 40;
+              align_shortcut = "right";
+              hl_shortcut = "Keyword";
+            };
+          };
+        in [
+          (mkButton "n" (cmd "ene") "  New file" "Operator")
+          (mkButton "p" (cmd "Telescope projects") "󱓴 Find Project" "Operator")
+          (mkButton "e" (cmd "Oil") "󰥨 File Explorer" "Operator")
+          (mkButton "f" (cmd "Telescope find_files") "󰍉 Telescope Find Files"
+            "Operator")
+          (mkButton "r" (cmd "Telescope oldfiles") "  Recent Files" "Operator")
+          (mkButton "s" (cmd "SessionRestore") " Restore Session (cwd)"
+            "Operator")
+          (mkButton "g" (cmd "Neogit") "󰊢 Open Neogit" "Operator")
+          (mkButton "q" (cmd "qa") "󰗼 Quit Neovim" "Operator")
         ];
       }
       {

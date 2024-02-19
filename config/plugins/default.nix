@@ -27,6 +27,7 @@
     ./pluginConfig/telescope.nix
     ./pluginConfig/lsp.nix
     ./pluginConfig/lualine.nix
+    ./pluginConfig/dap.nix
 
     # Autocomplete
     ./pluginConfig/nvim-cmp.nix
@@ -76,9 +77,12 @@
     project-nvim.enable = true;
     trouble.enable = true;
     luasnip.enable = true;
+    intellitab.enable = true;
+    vimtex.enable = true;
+    vimtex.installTexLive = true;
 
-    # fidget.enable = true; # Notifications about lsp status
-    # noice.enable = tue;
+    fidget.enable = true; # Notifications about lsp status
+    noice.enable = true;
     # lsp-lines.enable = true;
     # nvim-ufo.enable = true; # For some reason, this thing is way too agressive. It folds everything.
     # treesitter-context.enable = true;

@@ -15,6 +15,8 @@
       "<leader>p" = "Projects";
       "<leader>q" = "Quit";
       "<leader>w" = "Windows";
+      "<leader>d" = "Debug";
+      "<leader>l" = "Local";
     };
   };
 }

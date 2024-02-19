@@ -7,6 +7,7 @@
       lua = [ "stylua" ];
       python = [ "isort" "black" ];
       nix = [ "nixfmt" ];
+      c = [ "astyle" ];
     };
   };
 }

@@ -22,15 +22,17 @@
       ignorecase = true;
       smartcase = true;
       termguicolors = true; # Better colors
-      expandtab = true; # Use spaces instead of tabs
       grepprg = "rg --vimgrep";
       showmode = false; # Dont show mode since we have a statusline
-      smartindent = true;
       undolevels = 10000; # More undo, probably
       linebreak = true; # Enable line wrap. Yes, I like this setting like this
       # cmdheight = 0; # Hide command line when not being used
       #
       # laststatus = 3; # Global lualine
+      expandtab = false; # DO NOT Use spaces instead of tabs
+      autoindent = true;
+      tabstop = 2;
+      shiftwidth = 2;
     };
 
     clipboard = {
@@ -43,7 +45,7 @@
 
     globals = {
       mapleader = " ";
-      maplocalleader = " ";
+      maplocalleader = " l";
       filetype_pl = "prolog"; # pl = prolog, not perl
     };
 
