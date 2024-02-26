@@ -123,9 +123,9 @@
       };
       # << SEARCH
       # CODE
-      "<leader>cx" = {
+      "<leader>cX" = {
         action = "diagnostics";
-        desc = "Find diagnostics";
+        desc = "Find diagnostics (telescope)";
       };
       "<leader>ca" = {
         action = "quickfix";

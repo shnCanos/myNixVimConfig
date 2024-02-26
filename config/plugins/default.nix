@@ -36,6 +36,7 @@
     ./pluginConfig/undotree.nix
     ./pluginConfig/lspsaga.nix
     ./pluginConfig/which-key.nix
+    ./pluginConfig/trouble.nix
 
     # Notes
     ./pluginConfig/neorg.nix
@@ -62,7 +63,7 @@
     nix.enable = true; # Not too sure
     crates-nvim.enable = true;
     cursorline.enable = true;
-    endwise.enable = true;
+    # endwise.enable = true;
     nvim-autopairs.enable = true;
     rainbow-delimiters.enable = true;
     surround.enable = true; # Change surrounding delimiters
@@ -75,11 +76,9 @@
     comment-nvim.enable = true;
     better-escape.enable = true; # jk as escape
     project-nvim.enable = true;
-    trouble.enable = true;
     luasnip.enable = true;
     intellitab.enable = true;
     vimtex.enable = true;
-    vimtex.installTexLive = true;
 
     fidget.enable = true; # Notifications about lsp status
     noice.enable = true;

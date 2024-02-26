@@ -7,7 +7,7 @@
       lua = [ "stylua" ];
       python = [ "isort" "black" ];
       nix = [ "nixfmt" ];
-      c = [ "astyle" ];
+      c = [ "astyle" "clang_format" "uncrustify" ];
     };
   };
 }
