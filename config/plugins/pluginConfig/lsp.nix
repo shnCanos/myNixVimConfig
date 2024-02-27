@@ -13,6 +13,9 @@
   plugins.lsp = {
     enable = true;
     servers = {
+      # Bash
+      bashls.enable = true;
+
       # C
       clangd.enable = true;
       cmake.enable = true;
