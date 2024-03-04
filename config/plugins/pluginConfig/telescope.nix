@@ -167,6 +167,10 @@
         function()
           vim.cmd [[normal! bcw]]
         end'';
+      "<c-h>".__raw = ''
+        function()
+          vim.cmd [[normal! bcw]]
+        end'';
       "<c-w>".__raw = ''
         function()
           vim.cmd [[normal! bcw]]
