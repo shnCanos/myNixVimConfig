@@ -39,6 +39,13 @@
     key = "<c-BS>";
     action = "<c-w>";
   }
+
+  { # DELETE WORD (zellij, for some reason)
+    mode = [ "i" "t" "n" "c" ];
+    key = "<c-h>";
+    action = "<c-w>";
+  }
+
   # << MOVEMENT
 
   # QUIT
