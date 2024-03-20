@@ -11,7 +11,6 @@
       };
       # fzf-native.enable = true; # For some reason this one does not work
       media_files.enable = true;
-      project-nvim.enable = true;
       frecency.enable = true;
     };
 

@@ -7,7 +7,10 @@
       lua = [ "stylua" ];
       python = [ "isort" "black" ];
       nix = [ "nixfmt" ];
-      c = [ "astyle" "clang_format" "uncrustify" ];
+      # Handled by none-ls, supposedly
+      c = [
+        "astyle" # "clang_format" "uncrustify"
+      ];
     };
   };
 }

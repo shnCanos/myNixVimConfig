@@ -75,7 +75,6 @@
     mini.enable = true;
     comment-nvim.enable = true;
     better-escape.enable = true; # jk as escape
-    project-nvim.enable = true;
     luasnip.enable = true;
     intellitab.enable = true;
     vimtex.enable = true;
@@ -85,6 +84,11 @@
     # lsp-lines.enable = true;
     # nvim-ufo.enable = true; # For some reason, this thing is way too agressive. It folds everything.
     # treesitter-context.enable = true;
+
+    project-nvim = {
+      enable = true;
+      enableTelescope = true;
+    };
   };
 
   extraPlugins = with pkgs.vimPlugins; [

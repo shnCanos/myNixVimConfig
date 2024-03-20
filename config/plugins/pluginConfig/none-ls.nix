@@ -5,6 +5,8 @@
       diagnostics = {
         deadnix.enable = true;
         cppcheck.enable = true;
+        cmake_lint.enable = true;
+        # gccdiag.enable = true; #hmm
       };
       formatting = {
         nixfmt.enable = true;
@@ -13,7 +15,7 @@
         shfmt.enable = true;
         isort.enable = true;
         markdownlint.enable = true;
-        astyle.enable = true;
+        # astyle.enable = true;
       };
     };
   };
