@@ -74,7 +74,6 @@
     diffview.enable = true;
     mini.enable = true;
     comment-nvim.enable = true;
-    better-escape.enable = true; # jk as escape
     luasnip.enable = true;
     intellitab.enable = true;
     vimtex.enable = true;
@@ -85,6 +84,10 @@
     # nvim-ufo.enable = true; # For some reason, this thing is way too agressive. It folds everything.
     # treesitter-context.enable = true;
 
+    better-escape = {
+      enable = true;
+      mapping = [ "kj" "jk" "jj" "kk" ];
+    }; # jk as escape
     project-nvim = {
       enable = true;
       enableTelescope = true;
