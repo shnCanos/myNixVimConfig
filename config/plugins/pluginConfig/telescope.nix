@@ -1,4 +1,4 @@
-{ cmd, ... }:
+{ pkgs, cmd, ... }:
 
 {
   plugins.telescope = {
@@ -176,6 +176,12 @@
         end'';
     };
   };
+
+  # telescope Ui select
+  extraPlugins = with pkgs.vimPlugins; [ telescope-ui-select-nvim ];
+  extraConfigLua = ''
+    require("telescope").load_extension("ui-select")
+  '';
 
   keymaps = [
     {

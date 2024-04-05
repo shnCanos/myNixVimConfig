@@ -54,6 +54,9 @@
     # Tabs
     ./pluginConfig/barbar.nix
 
+    # Too lazy to categorize
+    ./pluginConfig/yanky.nix
+
     # ./pluginConfig/nvim-nu.nix
     # ./pluginConfig/firenvim.nix # Cool, but not in use
   ];
@@ -84,8 +87,11 @@
     fidget.enable = true; # Notifications about lsp status
     noice.enable = true;
     marks.enable = true;
+    # Keeping this one for now. Who knows when it'll be needed?
+    twilight.enable = true;
+    # wilder.enable = true;
     # lsp-lines.enable = true;
-    # nvim-ufo.enable = true; # For some reason, this thing is way too agressive. It folds everything.
+    nvim-ufo.enable = true;
     # treesitter-context.enable = true;
 
     better-escape = {

@@ -6,6 +6,11 @@
     key = "<esc>";
     action = "<esc>" + cmd "noh";
   }
+  # Add gF for creating file
+  {
+    key = "gF";
+    action = "e <cfile>";
+  }
 
   # BUFFER
   {
