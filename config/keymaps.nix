@@ -1,6 +1,12 @@
 { cmd, ... }:
 
 [
+  # Remove highlight
+  {
+    key = "<esc>";
+    action = "<esc>" + cmd "noh";
+  }
+
   # BUFFER
   {
     key = "<leader>bs";

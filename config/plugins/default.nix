@@ -83,6 +83,7 @@
 
     fidget.enable = true; # Notifications about lsp status
     noice.enable = true;
+    marks.enable = true;
     # lsp-lines.enable = true;
     # nvim-ufo.enable = true; # For some reason, this thing is way too agressive. It folds everything.
     # treesitter-context.enable = true;
@@ -96,7 +97,6 @@
       enable = true;
       enableTelescope = true;
     };
-
   };
 
   extraPlugins = with pkgs.vimPlugins; [
