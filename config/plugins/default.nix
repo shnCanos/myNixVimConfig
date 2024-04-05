@@ -89,9 +89,10 @@
     marks.enable = true;
     # Keeping this one for now. Who knows when it'll be needed?
     twilight.enable = true;
+    # navbuddy.enable = true;
     # wilder.enable = true;
     # lsp-lines.enable = true;
-    nvim-ufo.enable = true;
+    # nvim-ufo.enable = true; # Still randomly folding for no reason
     # treesitter-context.enable = true;
 
     better-escape = {
