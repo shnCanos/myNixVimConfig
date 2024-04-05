@@ -14,6 +14,7 @@
 
     # Terminal
     ./pluginConfig/toggleterm.nix
+    ./pluginConfig/overseer.nix
 
     # File management
     ./pluginConfig/neotree.nix
@@ -37,8 +38,10 @@
     ./pluginConfig/lspsaga.nix
     ./pluginConfig/which-key.nix
     ./pluginConfig/trouble.nix
+    ./pluginConfig/spectre.nix
+    ./pluginConfig/neoscroll.nix
 
-    # Notes
+    # Note
     ./pluginConfig/neorg.nix
     # ./pluginConfig/obsidian.nix # Hmm
 
@@ -73,7 +76,7 @@
     # TODO: Learn how to use this
     diffview.enable = true;
     mini.enable = true;
-    comment-nvim.enable = true;
+    comment.enable = true; # comment-nvim
     luasnip.enable = true;
     intellitab.enable = true;
     vimtex.enable = true;
@@ -86,12 +89,14 @@
 
     better-escape = {
       enable = true;
-      mapping = [ "kj" "jk" "jj" "kk" ];
+      # Lots of combinations for my terrible dexterity
+      mapping = [ "kj" "jk" "jj" "kk" "Kj" "KJ" "Jk" "JK" "kJ" "jK" ];
     }; # jk as escape
     project-nvim = {
       enable = true;
       enableTelescope = true;
     };
+
   };
 
   extraPlugins = with pkgs.vimPlugins; [
@@ -99,5 +104,4 @@
     telescope-symbols-nvim
     neorg-telescope # WARNING: Might not be necessary
   ];
-
 }

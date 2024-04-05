@@ -3,7 +3,7 @@
 {
   plugins.oil = {
     enable = true;
-    keymaps = {
+    settings.keymaps = {
       "q" = "actions.close";
       "<tab>" = "actions.select";
       "<bs>" = "actions.parent";

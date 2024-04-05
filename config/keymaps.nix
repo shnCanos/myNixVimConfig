@@ -127,6 +127,32 @@
     action = "<c-w>o";
     options.desc = "Close All Other Windows";
   }
+  # Resize
+  {
+    key = "<c-k>";
+    action = cmd "resize -2";
+    options.desc = "Resize up";
+  }
+  {
+    key = "<c-j>";
+    action = cmd "resize +2";
+    options.desc = "Resize Down";
+  }
+  {
+    key = "<c-h>";
+    action = cmd "vertical resize -2";
+    options.desc = "Resize Left";
+  }
+  {
+    key = "<c-l>";
+    action = cmd "vertical resize +2";
+    options.desc = "Resize Right";
+  }
+  {
+    key = "<c-=>";
+    action = cmd "<c-w>=";
+    options.desc = "Equalify windows";
+  }
   # << WINDOWS
 
   # OTHER

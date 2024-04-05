@@ -3,26 +3,30 @@
 {
   plugins.toggleterm = {
     enable = true;
-    size =
-      17; # Might be unused. Change ../../mappings/pluginsRelated.nix instead
-    direction = "horizontal";
+    size = 17;
+    direction = "float";
+    openMapping = "<c-/>";
   };
 
   keymaps = let terminalCommand = cmd "ToggleTerm size=17";
   in [
     # TOGGLETERM
     {
-      mode = "n";
-      key = "<leader>ot";
+      key = "<leader>to";
       action = terminalCommand;
       options.desc = "Toggle ToggleTerm";
     }
     {
-      mode = [ "n" "t" ];
-      key = "<C-/>";
-      action = terminalCommand;
-      options.desc = "Toggle ToggleTerm";
+      key = "<leader>ts";
+      action = "ToggleTermSendVisualLines";
+      options.desc = "Send Selected Lines To Term";
     }
+    # {
+    #   mode = [ "n" "t" ];
+    #   key = "<C-/>";
+    #   action = terminalCommand;
+    #   options.desc = "Toggle ToggleTerm";
+    # }
     {
       mode = "t";
       key = "<ESC>";
