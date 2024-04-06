@@ -27,11 +27,11 @@
     #   action = terminalCommand;
     #   options.desc = "Toggle ToggleTerm";
     # }
-    {
-      mode = "t";
-      key = "<ESC>";
-      action = "<c-\\><c-n>";
-    }
+    # {
+    #   mode = "t";
+    #   key = "<ESC>";
+    #   action = "<c-\\><c-n>";
+    # }
     {
       mode = "n";
       key = "<c-c>";
