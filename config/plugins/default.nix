@@ -22,6 +22,7 @@
 
     # Git
     ./pluginConfig/neogit.nix
+    ./pluginConfig/lazygit.nix
 
     # Essentials
     ./pluginConfig/treesitter.nix
