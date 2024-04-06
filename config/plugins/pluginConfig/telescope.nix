@@ -11,7 +11,7 @@
       };
       # fzf-native.enable = true; # For some reason this one does not work
       media_files.enable = true;
-      frecency.enable = true;
+      # frecency.enable = true;
     };
 
     keymaps = {

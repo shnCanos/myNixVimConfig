@@ -87,6 +87,8 @@
     fidget.enable = true; # Notifications about lsp status
     noice.enable = true;
     marks.enable = true;
+    leap.enable = true;
+    # specs.enable = true;
     # Keeping this one for now. Who knows when it'll be needed?
     twilight.enable = true;
     # navbuddy.enable = true;
@@ -94,7 +96,6 @@
     # lsp-lines.enable = true;
     # nvim-ufo.enable = true; # Still randomly folding for no reason
     # treesitter-context.enable = true;
-
     better-escape = {
       enable = true;
       # Lots of combinations for my terrible dexterity
@@ -104,11 +105,21 @@
       enable = true;
       enableTelescope = true;
     };
+    spider = {
+      enable = true;
+      keymaps.motions = {
+        b = "b";
+        e = "e";
+        ge = "ge";
+        w = "w";
+      };
+    };
   };
 
   extraPlugins = with pkgs.vimPlugins; [
     lazygit-nvim
     telescope-symbols-nvim
     neorg-telescope # WARNING: Might not be necessary
+    vim-wakatime
   ];
 }
