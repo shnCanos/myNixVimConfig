@@ -62,7 +62,7 @@
           (mkButton "r" (cmd "Telescope oldfiles") "  Recent Files" "Operator")
           (mkButton "s" (cmd "SessionRestore") " Restore Session (cwd)"
             "Operator")
-          (mkButton "g" (cmd "Neogit") "󰊢 Open Neogit" "Operator")
+          (mkButton "g" (cmd "LazyGit") "󰊢 Open LazyGit" "Operator")
           (mkButton "q" (cmd "qa") "󰗼 Quit Neovim" "Operator")
         ];
       }

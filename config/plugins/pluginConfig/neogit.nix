@@ -3,7 +3,7 @@
 {
   plugins.neogit.enable = true;
   keymaps = [{
-    key = "<leader>gg";
+    key = "<leader>gn";
     action = cmd "Neogit";
     options.desc = "Open Neogit";
   }];
