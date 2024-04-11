@@ -1,6 +1,11 @@
 { cmd, ... }:
 
 [
+  {
+    key = "<leader>pw";
+    action = cmd "!wc -w %";
+    options.desc = "Print number of words in document";
+  }
   # Remove highlight
   {
     key = "<esc>";
@@ -10,6 +15,7 @@
   {
     key = "gF";
     action = "e <cfile>";
+    options.desc = "Go to and create file under cursor";
   }
 
   # BUFFER
@@ -51,11 +57,11 @@
     action = "<c-w>";
   }
 
-  { # DELETE WORD (zellij, for some reason)
-    mode = [ "i" "t" "n" "c" ];
-    key = "<c-h>";
-    action = "<c-w>";
-  }
+  # { # DELETE WORD (zellij, for some reason)
+  #   mode = [ "i" "t" "n" "c" ];
+  #   key = "<c-h>";
+  #   action = "<c-w>";
+  # }
 
   # << MOVEMENT
 
@@ -140,22 +146,22 @@
   }
   # Resize
   {
-    key = "<c-k>";
+    key = "<c-up>";
     action = cmd "resize -2";
     options.desc = "Resize up";
   }
   {
-    key = "<c-j>";
+    key = "<c-down>";
     action = cmd "resize +2";
     options.desc = "Resize Down";
   }
   {
-    key = "<c-h>";
+    key = "<c-left>";
     action = cmd "vertical resize -2";
     options.desc = "Resize Left";
   }
   {
-    key = "<c-l>";
+    key = "<c-righ >";
     action = cmd "vertical resize +2";
     options.desc = "Resize Right";
   }

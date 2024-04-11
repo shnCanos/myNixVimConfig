@@ -3,6 +3,8 @@
 {
   plugins.telescope = {
     enable = true;
+    defaults.theme = "dropdown";
+    defaults = { set_env.__raw = ''{ [" COLORTERM "] = " truecolor " }''; };
     extensions = {
       file_browser = { # FAILED
         enable = true;
@@ -12,6 +14,8 @@
       # fzf-native.enable = true; # For some reason this one does not work
       media_files.enable = true;
       # frecency.enable = true;
+      ui-select.enable = true;
+      undo.enable = true;
     };
 
     keymaps = {
@@ -177,16 +181,10 @@
     };
   };
 
-  # telescope Ui select
-  extraPlugins = with pkgs.vimPlugins; [ telescope-ui-select-nvim ];
-  extraConfigLua = ''
-    require("telescope").load_extension("ui-select")
-  '';
-
   keymaps = [
     {
       # (For some reason this gives me an error if I put it in telescope itself)
-      key = "<leader>pf";
+      key = "<leader>fp";
       action = cmd "Telescope projects";
       options.desc = "Find Projects";
     }

@@ -5,8 +5,8 @@
     keymaps = {
       pin = "<leader>bp";
       pick = "<leader>bf";
-      movePrevious = "<M-h>";
-      moveNext = "<M-l>";
+      movePrevious = "<c-h>";
+      moveNext = "<c-l>";
       close = "<leader>bk";
       previous = "H";
       next = "L";

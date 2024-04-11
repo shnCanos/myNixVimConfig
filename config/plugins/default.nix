@@ -56,6 +56,8 @@
 
     # Too lazy to categorize
     ./pluginConfig/yanky.nix
+    ./pluginConfig/neogen.nix
+    ./pluginConfig/flit.nix
 
     # ./pluginConfig/nvim-nu.nix
     # ./pluginConfig/firenvim.nix # Cool, but not in use
@@ -88,31 +90,13 @@
     noice.enable = true;
     marks.enable = true;
     leap.enable = true;
+    nvim-colorizer.enable = true;
     # specs.enable = true;
     # Keeping this one for now. Who knows when it'll be needed?
     twilight.enable = true;
-    # navbuddy.enable = true;
-    # wilder.enable = true;
-    # lsp-lines.enable = true;
-    # nvim-ufo.enable = true; # Still randomly folding for no reason
-    # treesitter-context.enable = true;
-    better-escape = {
-      enable = true;
-      # Lots of combinations for my terrible dexterity
-      mapping = [ "kj" "jk" "jj" "kk" "Kj" "KJ" "Jk" "JK" "kJ" "jK" ];
-    }; # jk as escape
     project-nvim = {
       enable = true;
       enableTelescope = true;
-    };
-    spider = {
-      enable = true;
-      keymaps.motions = {
-        b = "b";
-        e = "e";
-        ge = "ge";
-        w = "w";
-      };
     };
   };
 
